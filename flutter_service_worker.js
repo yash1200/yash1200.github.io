@@ -6,9 +6,10 @@ const RESOURCES = {
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "index.html": "81bf5717b48921ef11cea1b0e583541a",
+"/": "81bf5717b48921ef11cea1b0e583541a",
 "assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
 "assets/AssetManifest.json": "6d893c4307de8f23e6963094950e566a",
-"assets/LICENSE": "89e061ec9ac961fd64664afd0f60f957",
+"assets/LICENSE": "656ef76cf63397f47e310325b1ed33bb",
 "assets/assets/images/instagram.png": "bb952b3e5c9b726196de8ee34227edb6",
 "assets/assets/images/linkedin.png": "7c2ddc7b8b6595f6d71db4534f0bb098",
 "assets/assets/images/dart.png": "9271c5feaa7176d4bc87467c11eaa8c0",
@@ -29,7 +30,7 @@ const RESOURCES = {
 "assets/assets/Boy.flr": "e952f57ebe5afe32d4727e31e2e5030e",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "assets/FontManifest.json": "01700ba55b08a6141f33e168c4a6c22f",
-"main.dart.js": "d62638f07551150a1dcd75fe0b1e51cc"
+"main.dart.js": "21401585cf11de20fbf44c1aa444ba60"
 };
 
 self.addEventListener('activate', function (event) {
