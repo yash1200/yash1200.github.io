@@ -1,17 +1,17 @@
 {
-    "name": "resume_flutter",
-    "short_name": "resume_flutter",
+    "name": "Yash Johri",
+    "short_name": "Yash Johri",
     "start_url": ".",
     "display": "minimal-ui",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Portfolio made with Flutter web",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
         {
             "src": "icons/Icon-192.png",
-            "sizes": "192x192",
+            "sizes": "256x256",
             "type": "image/png"
         },
         {
