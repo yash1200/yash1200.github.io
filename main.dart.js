@@ -53745,7 +53745,7 @@ break
 case 4:throw H.c("Could not launch https://drive.google.com/file/d/1wAqf5A8C9oPQ4bYpazWG81626BC-lXNq/view?usp=sharing")
 case 3:return P.a2(null,r)}})
 return P.a3($async$lD,r)},
-K:function(a,b){var s=null,r=F.bt(b,!1).a,q=r.b,p=$.pg(),o=t.t,n=T.eO(H.a([L.df("I'm Yash Johri",s,$.a5c()),T.bK(s,15,s),L.df("Android and Flutter Developer",s,$.abS()),T.bK(s,5,s),new N.mz(new M.QG(this),"View CV",s)],o),C.bF,C.aT,C.a2),m=r.a,l=T.bK(s,s,m*0.05)
+K:function(a,b){var s=null,r=F.bt(b,!1).a,q=r.b,p=$.pg(),o=t.t,n=T.eO(H.a([L.df("I'm Yash Johri",s,$.a5c()),T.bK(s,15,s),L.df("Full Stack Mobile Developer",s,$.abS()),T.bK(s,5,s),new N.mz(new M.QG(this),"View CV",s)],o),C.bF,C.aT,C.a2),m=r.a,l=T.bK(s,s,m*0.05)
 m=Math.min(q*0.6,m*0.6)
 return M.cd(s,T.lb(H.a([n,l,M.cd(s,new N.zC("assets/Boy.flr","coding",C.j3,C.aZ,s),s,s,s,m,s,s,m)],o),C.a3,C.aU,C.a2),p,s,s,q*0.75,s,s,s)}}
 M.QG.prototype={

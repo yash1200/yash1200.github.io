@@ -30,7 +30,7 @@ const RESOURCES = {
 "assets/assets/images/sql.png": "7a76cff597d8b80b3f1dc36a28bdd39d",
 "assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
 "assets/AssetManifest.json": "a19df4e1347ff310a121a74ef6ad5daf",
-"main.dart.js": "98c194543798f9b7a892adc887b803e4",
+"main.dart.js": "35ee498e9f08cd9c9e60e10308cb5d0f",
 "index.html": "81bf5717b48921ef11cea1b0e583541a",
 "/": "81bf5717b48921ef11cea1b0e583541a",
 "manifest.json": "87cbfa90b53c626685290282da5c542e",
