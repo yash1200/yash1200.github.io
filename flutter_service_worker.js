@@ -3,39 +3,39 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
-"assets/NOTICES": "f32c583a25c0f532bb64ba8478086d0e",
-"assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"assets/assets/Boy.flr": "e952f57ebe5afe32d4727e31e2e5030e",
-"assets/assets/images/instagram.png": "bb952b3e5c9b726196de8ee34227edb6",
-"assets/assets/images/dart.png": "9271c5feaa7176d4bc87467c11eaa8c0",
-"assets/assets/images/nodejs.png": "b73453c62371ffa61b16dce4dd72ae65",
-"assets/assets/images/flutter.png": "67642a0b80f3d50277c44cde8f450e50",
-"assets/assets/images/codeforces.png": "1d395ff8bedd2848730fac2ddcf6333b",
-"assets/assets/images/cpp.png": "fbc85d8dbc00b63fab032f19dba650d2",
-"assets/assets/images/android.png": "bd2a6f71b226d38ccdbaff124b727080",
-"assets/assets/images/twitter.png": "312082f64163590d6cdf6f2929bf7612",
+  "main.dart.js": "1d635d0cee606be1235bc245c6f26f93",
+"assets/assets/images/linkedin.png": "7c2ddc7b8b6595f6d71db4534f0bb098",
+"assets/assets/images/mongodb.png": "8d95890abc0bd2749be918a3be47d4df",
 "assets/assets/images/codechef.png": "2fb8bd067a890e6e6e6c438cc940d629",
-"assets/assets/images/javascript.png": "2e5de0a7d635b437db088d43f847d39c",
-"assets/assets/images/java.png": "458aa8023c52e48ce5b87d0c764fb414",
+"assets/assets/images/instagram.png": "bb952b3e5c9b726196de8ee34227edb6",
+"assets/assets/images/nodejs.png": "b73453c62371ffa61b16dce4dd72ae65",
+"assets/assets/images/sql.png": "7a76cff597d8b80b3f1dc36a28bdd39d",
+"assets/assets/images/dart.png": "9271c5feaa7176d4bc87467c11eaa8c0",
+"assets/assets/images/c.png": "1c1888a3eb2f04360763c1a95257b726",
 "assets/assets/images/github.png": "9bd526d73178fa9d0331801a0b6ba056",
 "assets/assets/images/hackerrank.png": "50538e10603eaa930182af1fbec8978f",
-"assets/assets/images/mongodb.png": "8d95890abc0bd2749be918a3be47d4df",
-"assets/assets/images/c.png": "1c1888a3eb2f04360763c1a95257b726",
-"assets/assets/images/linkedin.png": "7c2ddc7b8b6595f6d71db4534f0bb098",
+"assets/assets/images/android.png": "bd2a6f71b226d38ccdbaff124b727080",
 "assets/assets/images/git.png": "cca1d72813c340797640c2975925a315",
-"assets/assets/images/python.png": "5a53234c474a06637f4176381249534f",
+"assets/assets/images/twitter.png": "312082f64163590d6cdf6f2929bf7612",
+"assets/assets/images/flutter.png": "67642a0b80f3d50277c44cde8f450e50",
+"assets/assets/images/javascript.png": "2e5de0a7d635b437db088d43f847d39c",
 "assets/assets/images/firebase.png": "ae20121b3839466faef58c1971b8d7e5",
-"assets/assets/images/sql.png": "7a76cff597d8b80b3f1dc36a28bdd39d",
+"assets/assets/images/cpp.png": "fbc85d8dbc00b63fab032f19dba650d2",
+"assets/assets/images/python.png": "5a53234c474a06637f4176381249534f",
+"assets/assets/images/codeforces.png": "1d395ff8bedd2848730fac2ddcf6333b",
+"assets/assets/images/java.png": "458aa8023c52e48ce5b87d0c764fb414",
+"assets/assets/Boy.flr": "e952f57ebe5afe32d4727e31e2e5030e",
 "assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
+"assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/AssetManifest.json": "a19df4e1347ff310a121a74ef6ad5daf",
-"main.dart.js": "35ee498e9f08cd9c9e60e10308cb5d0f",
-"index.html": "81bf5717b48921ef11cea1b0e583541a",
-"/": "81bf5717b48921ef11cea1b0e583541a",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
+"assets/NOTICES": "cbd7461a1dd467febb0be69ba496b8fe",
+"favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "manifest.json": "87cbfa90b53c626685290282da5c542e",
+"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1"
+"index.html": "a61dcb5c01bfdd856c10c66f786a2602",
+"/": "a61dcb5c01bfdd856c10c66f786a2602"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -47,13 +47,12 @@ const CORE = [
 "assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
-
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
-      // Provide a no-cache param to ensure the latest version is downloaded.
-      return cache.addAll(CORE.map((value) => new Request(value, {'cache': 'no-cache'})));
+      return cache.addAll(
+        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
     })
   );
 });
@@ -68,7 +67,6 @@ self.addEventListener("activate", function(event) {
       var tempCache = await caches.open(TEMP);
       var manifestCache = await caches.open(MANIFEST);
       var manifest = await manifestCache.match('manifest');
-
       // When there is no prior manifest, clear the entire cache.
       if (!manifest) {
         await caches.delete(CACHE_NAME);
@@ -82,7 +80,6 @@ self.addEventListener("activate", function(event) {
         await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
         return;
       }
-
       var oldManifest = await manifest.json();
       var origin = self.location.origin;
       for (var request of await contentCache.keys()) {
@@ -123,21 +120,26 @@ self.addEventListener("fetch", (event) => {
   var origin = self.location.origin;
   var key = event.request.url.substring(origin.length + 1);
   // Redirect URLs to the index.html
-  if (event.request.url == origin || event.request.url.startsWith(origin + '/#')) {
+  if (key.indexOf('?v=') != -1) {
+    key = key.split('?v=')[0];
+  }
+  if (event.request.url == origin || event.request.url.startsWith(origin + '/#') || key == '') {
     key = '/';
   }
   // If the URL is not the RESOURCE list, skip the cache.
   if (!RESOURCES[key]) {
     return event.respondWith(fetch(event.request));
   }
+  // If the URL is the index.html, perform an online-first request.
+  if (key == '/') {
+    return onlineFirst(event);
+  }
   event.respondWith(caches.open(CACHE_NAME)
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache. Ensure the resources are not cached
-        // by the browser for longer than the service worker expects.
-        var modifiedRequest = new Request(event.request, {'cache': 'no-cache'});
-        return response || fetch(modifiedRequest).then((response) => {
+        // lazily populate the cache.
+        return response || fetch(event.request).then((response) => {
           cache.put(event.request, response.clone());
           return response;
         });
@@ -152,7 +154,6 @@ self.addEventListener('message', (event) => {
   if (event.data === 'skipWaiting') {
     return self.skipWaiting();
   }
-
   if (event.message === 'downloadOffline') {
     downloadOffline();
   }
@@ -177,4 +178,26 @@ async function downloadOffline() {
     }
   }
   return contentCache.addAll(resources);
+}
+
+// Attempt to download the resource online before falling back to
+// the offline cache.
+function onlineFirst(event) {
+  return event.respondWith(
+    fetch(event.request).then((response) => {
+      return caches.open(CACHE_NAME).then((cache) => {
+        cache.put(event.request, response.clone());
+        return response;
+      });
+    }).catch((error) => {
+      return caches.open(CACHE_NAME).then((cache) => {
+        return cache.match(event.request).then((response) => {
+          if (response != null) {
+            return response;
+          }
+          throw error;
+        });
+      });
+    })
+  );
 }
