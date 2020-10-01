@@ -6,7 +6,7 @@ const RESOURCES = {
   "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "manifest.json": "87cbfa90b53c626685290282da5c542e",
-"favicon.png": "5dcef449791fa27946b3d35ad8803796",
+"favicon.png": "c27515ae2d3826b68b042d56f23661ed",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/assets/Boy.flr": "e952f57ebe5afe32d4727e31e2e5030e",
 "assets/assets/images/c.png": "1c1888a3eb2f04360763c1a95257b726",
@@ -29,14 +29,14 @@ const RESOURCES = {
 "assets/assets/images/flutter.png": "67642a0b80f3d50277c44cde8f450e50",
 "assets/assets/images/cpp.png": "fbc85d8dbc00b63fab032f19dba650d2",
 "assets/assets/images/github.png": "9bd526d73178fa9d0331801a0b6ba056",
-"assets/fonts/MaterialIcons-Regular.otf": "a68d2a28c526b3b070aefca4bac93d25",
+"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "assets/AssetManifest.json": "a19df4e1347ff310a121a74ef6ad5daf",
 "assets/NOTICES": "38df9286bad83c479351cc4c765eef43",
 "version.json": "408798af188378b64d27faac697a675e",
-"main.dart.js": "5bb352616fa846fa68a989d5c2aa90e8",
-"index.html": "26332c85ee541bd2a2f3efa45128e683",
-"/": "26332c85ee541bd2a2f3efa45128e683"
+"main.dart.js": "e8a49e2b0a5de8b7a09d846be3586cd6",
+"index.html": "b92aae7cf75b8569ff116ae38830ff7d",
+"/": "b92aae7cf75b8569ff116ae38830ff7d"
 };
 
 // The application shell files that are downloaded before a service worker can
