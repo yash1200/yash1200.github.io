@@ -17,12 +17,15 @@ const RESOURCES = {
 "assets/assets/images/instagram.png": "bb952b3e5c9b726196de8ee34227edb6",
 "assets/assets/images/mongodb.png": "8d95890abc0bd2749be918a3be47d4df",
 "assets/assets/images/twitter.png": "312082f64163590d6cdf6f2929bf7612",
+"assets/assets/images/kotlin.png": "e949af3fd296c54dab5f06e9359cac1e",
 "assets/assets/images/linkedin.png": "7c2ddc7b8b6595f6d71db4534f0bb098",
 "assets/assets/images/python.png": "5a53234c474a06637f4176381249534f",
 "assets/assets/images/android.png": "bd2a6f71b226d38ccdbaff124b727080",
 "assets/assets/images/nodejs.png": "b73453c62371ffa61b16dce4dd72ae65",
 "assets/assets/images/sql.png": "7a76cff597d8b80b3f1dc36a28bdd39d",
+"assets/assets/images/vue.png": "bd1e621275f836e4a908a09ff4c0e28e",
 "assets/assets/images/git.png": "cca1d72813c340797640c2975925a315",
+"assets/assets/images/nuxt.png": "64797c7ed61c2d5c282008bddb1e0054",
 "assets/assets/images/codechef.png": "2fb8bd067a890e6e6e6c438cc940d629",
 "assets/assets/images/java.png": "458aa8023c52e48ce5b87d0c764fb414",
 "assets/assets/images/dart.png": "9271c5feaa7176d4bc87467c11eaa8c0",
@@ -31,12 +34,12 @@ const RESOURCES = {
 "assets/assets/images/github.png": "9bd526d73178fa9d0331801a0b6ba056",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
-"assets/AssetManifest.json": "a19df4e1347ff310a121a74ef6ad5daf",
+"assets/AssetManifest.json": "6e044f79ddf28956fcff511ec3e60bc5",
 "assets/NOTICES": "662d23d49a2bb273a0cfe29fa82d4bd9",
 "version.json": "408798af188378b64d27faac697a675e",
-"main.dart.js": "10978d92f23f15547630721ee22c492f",
-"index.html": "8dd4c01f415fc9d76bdefd776e2ae118",
-"/": "8dd4c01f415fc9d76bdefd776e2ae118"
+"main.dart.js": "5b71fe24fad67e98a394fd374ad9530d",
+"index.html": "11a4debde72e9fd42b36a617b508fcf7",
+"/": "11a4debde72e9fd42b36a617b508fcf7"
 };
 
 // The application shell files that are downloaded before a service worker can
