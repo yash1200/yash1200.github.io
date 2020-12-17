@@ -38,11 +38,11 @@ const RESOURCES = {
 "assets/packages/fluttertoast/assets/toastify.js": "8f5ac78dd0b9b5c9959ea1ade77f68ae",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "b14fcf3ee94e3ace300b192e9e7c8c5d",
 "assets/AssetManifest.json": "f1b4cfa1c51e6fd43770d890db3227f8",
-"assets/NOTICES": "5ed0c45913cb7328a5536c4a6c5bc99f",
+"assets/NOTICES": "08f20ed1c800283373017ae3591c5d0c",
 "version.json": "408798af188378b64d27faac697a675e",
-"main.dart.js": "0d644d0374ecf5878ca06a8966371733",
-"index.html": "c3f99752894d811fca1d588a848a1d22",
-"/": "c3f99752894d811fca1d588a848a1d22"
+"main.dart.js": "49879dcaad2676631b388da68fa17c46",
+"index.html": "a2b76a3a9c6f86842d13f24a5f5fa81a",
+"/": "a2b76a3a9c6f86842d13f24a5f5fa81a"
 };
 
 // The application shell files that are downloaded before a service worker can
