@@ -36,13 +36,13 @@ const RESOURCES = {
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/packages/fluttertoast/assets/toastify.css": "8beb4c67569fb90146861e66d94163d7",
 "assets/packages/fluttertoast/assets/toastify.js": "8f5ac78dd0b9b5c9959ea1ade77f68ae",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "b14fcf3ee94e3ace300b192e9e7c8c5d",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/AssetManifest.json": "f1b4cfa1c51e6fd43770d890db3227f8",
-"assets/NOTICES": "08f20ed1c800283373017ae3591c5d0c",
+"assets/NOTICES": "9f258e3bc2996880c4ca58c416e34bcc",
 "version.json": "408798af188378b64d27faac697a675e",
-"main.dart.js": "49879dcaad2676631b388da68fa17c46",
-"index.html": "a2b76a3a9c6f86842d13f24a5f5fa81a",
-"/": "a2b76a3a9c6f86842d13f24a5f5fa81a"
+"main.dart.js": "95578d42bf2c19ecd845e174c28786fa",
+"index.html": "62a985460e0d445b37b79f6d0b9e1c37",
+"/": "62a985460e0d445b37b79f6d0b9e1c37"
 };
 
 // The application shell files that are downloaded before a service worker can
