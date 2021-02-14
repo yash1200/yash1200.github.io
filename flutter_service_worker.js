@@ -15,6 +15,7 @@ const RESOURCES = {
 "assets/assets/images/javascript.png": "2e5de0a7d635b437db088d43f847d39c",
 "assets/assets/images/codeforces.png": "1d395ff8bedd2848730fac2ddcf6333b",
 "assets/assets/images/instagram.png": "bb952b3e5c9b726196de8ee34227edb6",
+"assets/assets/images/react.png": "bdeee86157327229ad90c7227c2ad891",
 "assets/assets/images/mongodb.png": "8d95890abc0bd2749be918a3be47d4df",
 "assets/assets/images/twitter.png": "312082f64163590d6cdf6f2929bf7612",
 "assets/assets/images/kotlin.png": "e949af3fd296c54dab5f06e9359cac1e",
@@ -25,7 +26,6 @@ const RESOURCES = {
 "assets/assets/images/sql.png": "7a76cff597d8b80b3f1dc36a28bdd39d",
 "assets/assets/images/vue.png": "bd1e621275f836e4a908a09ff4c0e28e",
 "assets/assets/images/git.png": "cca1d72813c340797640c2975925a315",
-"assets/assets/images/nuxt.png": "64797c7ed61c2d5c282008bddb1e0054",
 "assets/assets/images/codechef.png": "2fb8bd067a890e6e6e6c438cc940d629",
 "assets/assets/images/java.png": "458aa8023c52e48ce5b87d0c764fb414",
 "assets/assets/images/dart.png": "9271c5feaa7176d4bc87467c11eaa8c0",
@@ -37,12 +37,12 @@ const RESOURCES = {
 "assets/packages/fluttertoast/assets/toastify.css": "8beb4c67569fb90146861e66d94163d7",
 "assets/packages/fluttertoast/assets/toastify.js": "8f5ac78dd0b9b5c9959ea1ade77f68ae",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/AssetManifest.json": "f1b4cfa1c51e6fd43770d890db3227f8",
-"assets/NOTICES": "354ddafed0c986af873bbb4b7c839c3e",
+"assets/AssetManifest.json": "4a166a8d241498101ba6f71c15d1ea2b",
+"assets/NOTICES": "c5c228e824d9c5d4f3a19b900cb2ad8e",
 "version.json": "408798af188378b64d27faac697a675e",
-"main.dart.js": "a63c8260e88545e8f9dd377f08ee708a",
-"index.html": "bb1232601bf58c44b16acd81d7c362af",
-"/": "bb1232601bf58c44b16acd81d7c362af"
+"main.dart.js": "dbb5f267cf69a0e3b616bb9448064d16",
+"index.html": "e5585841cf43467d233198c7aa562526",
+"/": "e5585841cf43467d233198c7aa562526"
 };
 
 // The application shell files that are downloaded before a service worker can
