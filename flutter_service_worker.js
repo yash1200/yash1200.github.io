@@ -8,13 +8,13 @@ const RESOURCES = {
 "manifest.json": "9ec2449e8869aafcd2690e6fb1c92f19",
 "favicon.png": "c27515ae2d3826b68b042d56f23661ed",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"assets/assets/Boy.flr": "e952f57ebe5afe32d4727e31e2e5030e",
 "assets/assets/images/c.png": "1c1888a3eb2f04360763c1a95257b726",
 "assets/assets/images/hackerrank.png": "50538e10603eaa930182af1fbec8978f",
 "assets/assets/images/firebase.png": "ae20121b3839466faef58c1971b8d7e5",
 "assets/assets/images/javascript.png": "2e5de0a7d635b437db088d43f847d39c",
 "assets/assets/images/codeforces.png": "1d395ff8bedd2848730fac2ddcf6333b",
 "assets/assets/images/instagram.png": "bb952b3e5c9b726196de8ee34227edb6",
+"assets/assets/images/boy1.png": "766f2286f0de86cd771e6cc29b5135d3",
 "assets/assets/images/react.png": "bdeee86157327229ad90c7227c2ad891",
 "assets/assets/images/mongodb.png": "8d95890abc0bd2749be918a3be47d4df",
 "assets/assets/images/twitter.png": "312082f64163590d6cdf6f2929bf7612",
@@ -34,15 +34,15 @@ const RESOURCES = {
 "assets/assets/images/cpp.png": "fbc85d8dbc00b63fab032f19dba650d2",
 "assets/assets/images/github.png": "9bd526d73178fa9d0331801a0b6ba056",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/packages/fluttertoast/assets/toastify.css": "8beb4c67569fb90146861e66d94163d7",
-"assets/packages/fluttertoast/assets/toastify.js": "8f5ac78dd0b9b5c9959ea1ade77f68ae",
+"assets/packages/fluttertoast/assets/toastify.css": "a85675050054f179444bc5ad70ffc635",
+"assets/packages/fluttertoast/assets/toastify.js": "e7006a0a033d834ef9414d48db3be6fc",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/AssetManifest.json": "4a166a8d241498101ba6f71c15d1ea2b",
-"assets/NOTICES": "6d665e3e6b9ad246e76b338f086f896f",
+"assets/AssetManifest.json": "d1e7716aacbb4ef12df8260296937bcc",
+"assets/NOTICES": "01dc60cfa9bbc20f432640690e83debf",
 "version.json": "408798af188378b64d27faac697a675e",
-"main.dart.js": "7c9a4b7c150e1be76ac461dd1d6f83df",
-"index.html": "afa111ec18c5ecefa7672cd928a888d9",
-"/": "afa111ec18c5ecefa7672cd928a888d9"
+"main.dart.js": "73a85a01a55234be079eb7a3f64b937d",
+"index.html": "3c3e06dadedcecf0f56ed7fb91dba26f",
+"/": "3c3e06dadedcecf0f56ed7fb91dba26f"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -60,7 +60,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
@@ -186,7 +186,7 @@ async function downloadOffline() {
     }
     currentContent[key] = true;
   }
-  for (var resourceKey in Object.keys(RESOURCES)) {
+  for (var resourceKey of Object.keys(RESOURCES)) {
     if (!currentContent[resourceKey]) {
       resources.push(resourceKey);
     }
