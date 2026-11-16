@@ -7,10 +7,10 @@ Live: https://yash1200.github.io
 ## Develop
 
 ```sh
-npm install
-npm run dev      # local dev server
-npm run check    # type + svelte checks
-npm run build    # static output in build/
+pnpm install
+pnpm dev         # local dev server
+pnpm check       # type + svelte checks
+pnpm build       # static output in build/
 ```
 
 Content (experience, projects, stack, socials) lives in `src/lib/content.ts`.
