@@ -1,0 +1,237 @@
+/* Shape rule: interactive controls are full pills; containers use --radius. */
+:root {
+	/* Palette sampled from static/profile.jpg: wall stripe #d29c2a, glass #8ea8a1,
+	   chair #5f7182, sweater #dac5b6. One accent (marigold), everything else neutral. */
+	--bg: #edf1ef;
+	--surface: #f8faf9;
+	--surface-2: #e2e8e5;
+	--line: rgb(27 40 46 / 0.12);
+	--text: #1b232a;
+	--muted: #55636b;
+	--accent: #d29c2a;
+	--accent-text: #855700;
+	--accent-soft: rgb(210 156 42 / 0.16);
+	--on-accent: #1b1609;
+	--shadow: 0 1px 2px rgb(27 35 42 / 0.06), 0 14px 36px -14px rgb(27 35 42 / 0.22);
+	--radius: 22px;
+	--shell: color-mix(in oklab, var(--text) 5%, var(--bg));
+	--ease: cubic-bezier(0.32, 0.72, 0, 1);
+	--font: 'Geist Variable', ui-sans-serif, system-ui, sans-serif;
+	--mono: 'Geist Mono Variable', ui-monospace, monospace;
+	color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #12171c;
+		--surface: #182027;
+		--surface-2: #202a32;
+		--line: rgb(205 218 226 / 0.1);
+		--text: #eee7e1;
+		--muted: #9ca7ae;
+		--accent: #e2a734;
+		--accent-text: #e9b44c;
+		--accent-soft: rgb(226 167 52 / 0.14);
+		--on-accent: #1b1609;
+		--shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 18px 40px -16px rgb(0 0 0 / 0.55);
+		color-scheme: dark;
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 88px;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--font);
+	font-size: 1rem;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img,
+svg {
+	display: block;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+::selection {
+	background: var(--accent);
+	color: var(--on-accent);
+}
+
+:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 3px;
+	border-radius: 6px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin-inline: auto;
+	padding-inline: 24px;
+}
+
+@media (max-width: 767px) {
+	.container {
+		padding-inline: 16px;
+	}
+}
+
+section {
+	padding-block: clamp(96px, 12vw, 160px);
+}
+
+h2 {
+	font-size: clamp(2.25rem, 5vw, 3.75rem);
+	font-weight: 600;
+	letter-spacing: -0.045em;
+	line-height: 1;
+	margin-bottom: clamp(40px, 5vw, 64px);
+}
+
+/* Double bezel as a shadow ring: inner hairline and highlight, a 6px shell, an outer
+   hairline, then a soft ambient shadow. Spread shadows follow border-radius, so the
+   shell stays concentric with the card. Cards set --ring to recolour the outer edge. */
+.shell {
+	box-shadow:
+		inset 0 1px 0 rgb(255 255 255 / 0.05),
+		inset 0 0 0 1px var(--line),
+		0 0 0 6px var(--shell),
+		0 0 0 7px var(--ring, var(--line)),
+		0 40px 80px -48px rgb(8 12 16 / 0.4);
+}
+
+/* Card tint: glass sage to marigold, both sampled from the profile photo.
+   Cards vary angle and strength. Keep --tint-warm at 18% or less where text sits:
+   above that, muted text drops under 4.5:1 in dark mode. */
+.tint {
+	background: linear-gradient(
+		var(--tint-angle, 135deg),
+		color-mix(in oklab, #8ea8a1 var(--tint-cool, 14%), var(--surface)) 0%,
+		var(--surface) var(--tint-mid, 45%),
+		color-mix(in oklab, var(--accent) var(--tint-warm, 18%), var(--surface)) 100%
+	);
+}
+
+/* Buttons: pills; a trailing icon sits in its own nested circle (.ico) */
+.btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	height: 50px;
+	padding-inline: 22px;
+	border-radius: 999px;
+	font-weight: 500;
+	white-space: nowrap;
+	transition:
+		transform 0.5s var(--ease),
+		background-color 0.4s var(--ease),
+		border-color 0.4s var(--ease);
+}
+.btn:has(.ico) {
+	padding-right: 7px;
+	gap: 14px;
+}
+.btn:active {
+	transform: scale(0.98);
+}
+.btn .ico {
+	display: grid;
+	place-items: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 999px;
+	background: rgb(0 0 0 / 0.12);
+	transition: transform 0.6s var(--ease);
+}
+.btn:hover .ico {
+	transform: translate(3px, -1px) scale(1.06);
+}
+.btn-primary {
+	background: var(--accent);
+	color: var(--on-accent);
+}
+.btn-primary:hover {
+	background: color-mix(in oklab, var(--accent), var(--text) 12%);
+}
+.btn-ghost {
+	border: 1px solid var(--line);
+	color: var(--text);
+}
+.btn-ghost .ico {
+	background: var(--surface-2);
+}
+.btn-ghost:hover {
+	border-color: color-mix(in oklab, var(--accent) 60%, var(--line));
+}
+
+/* Double bezel: an outer shell with a hairline holding an inner core with concentric radius */
+.bezel {
+	--r: 28px;
+	--pad: 6px;
+	padding: var(--pad);
+	border-radius: var(--r);
+	background: color-mix(in oklab, var(--text) 5%, transparent);
+	box-shadow:
+		inset 0 0 0 1px var(--line),
+		0 40px 80px -40px rgb(8 12 16 / 0.35);
+}
+.bezel > .core {
+	border-radius: calc(var(--r) - var(--pad));
+	overflow: hidden;
+	box-shadow: inset 0 1px 1px rgb(255 255 255 / 0.12);
+}
+
+/* Scroll reveal, driven by the reveal attachment. A keyframe (not a transition) so it
+   never fights component hover transitions. */
+@media (prefers-reduced-motion: no-preference) {
+	[data-reveal=''] {
+		opacity: 0;
+	}
+	[data-reveal='in'] {
+		animation: reveal 0.9s var(--ease) calc(var(--d, 0) * 70ms) both;
+	}
+}
+@keyframes reveal {
+	from {
+		opacity: 0;
+		translate: 0 40px;
+		filter: blur(8px);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}

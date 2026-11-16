@@ -1,37 +1,21 @@
-# Yash Johri Portfolio
+# yash1200.github.io
 
-It is my portfolio built using Flutter web.
+Personal site of Yash Johri, built with SvelteKit 3 and Svelte 5, prerendered with `adapter-static`.
 
-It is live on: https://yash1200.github.io/#/ (Not optimized for Mobile experience)
+Live: https://yash1200.github.io
 
-### Introduction :
+## Develop
 
-<img src="https://imgur.com/kawh0N1.png">
+```sh
+npm install
+npm run dev      # local dev server
+npm run check    # type + svelte checks
+npm run build    # static output in build/
+```
 
-### About Me :
+Content (experience, projects, stack, socials) lives in `src/lib/content.ts`.
 
-<img src="https://imgur.com/6mmD4X8.png">
+## Deploy
 
-### Skills :
-
-<img src="https://imgur.com/FcroRyu.png">
-
-### Work Experience :
-
-<img src="https://imgur.com/5uJFQwy.png">
-
-Got inspired from this theme: http://droitthemes.com/wp/mak/home-dark/
-
-## Created & Maintained By
-
-[Yash Johri](https://yash1200.github.io/#/)
-
-[<img align="left" alt="yash1200 | Twitter" width="30px" src="https://image.flaticon.com/icons/svg/733/733579.svg" />][twitter]
-[<img align="left" alt="yash1200 | LinkedIn" width="30px" src="https://avatars3.githubusercontent.com/u/357098?s=200&v=4" />][linkedin]
-[<img align="left" alt="yash1200 | Instagram" width="30px" src="https://image.flaticon.com/icons/svg/174/174855.svg" />][instagram]
-[<img align="left" alt="yash1200 | Medium" width="30px" src="https://cdns.iconmonstr.com/wp-content/assets/preview/2018/240/iconmonstr-medium-3.png" />][medium]
-
-[twitter]: https://twitter.com/YashJohri17
-[instagram]: https://www.instagram.com/just_johri/
-[linkedin]: https://www.linkedin.com/in/yash-johri-61014717b/
-[medium]: https://medium.com/@yashjohri1200
+Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the site and publishes it to GitHub Pages.
+Pages must be set to **Settings → Pages → Source: GitHub Actions**.
